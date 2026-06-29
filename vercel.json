@@ -20,8 +20,8 @@
       "handle": "filesystem"
     },
     {
-      "src": "/frontend/(.*)",
-      "dest": "/frontend/dist/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
