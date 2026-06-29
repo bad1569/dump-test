@@ -17,7 +17,10 @@
       "dest": "/api/index.js"
     },
     {
-      "src": "^(?!/api/).*",
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/index.html"
     }
   ]
