@@ -9,7 +9,7 @@ import { loadKnowledgeFromDB, getCacheStatus, getAIStatus } from './config/genki
 import { ENV } from './config/env.js';
 
 dotenv.config();
-
+//sshitttt
 const app = express();
 const PORT = ENV.PORT || 3000;
 
