@@ -1,3 +1,5 @@
-import handler from '../backend/api/index.js';
+import app from '../index.js';
 
-export default handler;
+export default function handler(req, res) {
+	return app(req, res);
+}
