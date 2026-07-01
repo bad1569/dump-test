@@ -1,5 +1,11 @@
-import app from '../index.js';
+import app, { initializeServer } from '../index.js';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
+	try {
+		await initializeServer();
+	} catch (err) {
+		console.error('Initialization error in backend serverless handler:', err);
+	}
+
 	return app(req, res);
 }
